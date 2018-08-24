@@ -15,26 +15,33 @@
     <div class="container">
       <div class="jumbotron center-block">
         <h1 class="display-4"><em>Welcome to Pizza What?</em></h1>
-        <h2 class="lead"> please place an order </h2>
       </div>
     </div>
     <!-- top section -->
     <div class="main container">
       <form class="form-control no-border" id="pizzaGate">
-        <p><label for="size"><input type="radio" name="size" class="reuse center-block center" value="small" sizePrice="10" required="true"> Small $10</label></p>
-        <p><label for="size"><input type="radio" name="size" class="reuse center-block center" value="medium" sizePrice="15">Medium $15</label></p>
-        <p><label for="size"><input type="radio" name="size" class="reuse center-block center" value="large" sizePrice="20">large $20</label></p>
+        <h2 id="greeting"> What Size would you like? </h2>
+        <label for="size"><input type="radio" name="size" class="reuse center-block center" value="small" sizePrice="10" required="true"> Small $10</label>
+        <label for="size"><input type="radio" name="size" class="reuse center-block center" value="medium" sizePrice="15">Medium $15</label>
+        <label for="size"><input type="radio" name="size" class="reuse center-block center" value="large" sizePrice="20">large $20</label>
         <h2> What Toppings Would you like?</h2>
-        <p><label for="cheese"><input type="radio" name="cheese" class="reuse center-block center" value="cheese" toppingsPrice="0">Cheese</label></p>
-        <p><label for="cheese"><input type="radio" name="cheese" class="reuse center-block center" value="lite-cheese" toppingsPrice="0">Lite-Cheese</label></p>
-        <p><label for="cheese"><input type="radio" name="cheese" class="reuse center-block center" value="Extra-cheese" toppingsPrice="2" required="true">Extra-Cheese $2 Extra</label></p>
+        <label for="cheese"><input type="radio" name="cheese" class="reuse center-block center" value="cheese" toppingsPrice="0">Cheese</label>
+        <label for="cheese"><input type="radio" name="cheese" class="reuse center-block center" value="lite-cheese" toppingsPrice="0">Lite-Cheese</label>
+        <label for="cheese"><input type="radio" name="cheese" class="reuse center-block center" value="Extra-cheese" toppingsPrice="2" required="true">Extra-Cheese $2 Extra</label>
         <h2> Try these delicious toppings, only 2$ each </h2>
-        <p><label for="toppings"><input type="checkbox" name="toppings" class="reuse center-block center" value="Pepperoni" toppingsPrice="2">Pepperoni</label></p>
-        <p><label for="toppings"><input type="checkbox" name="toppings" class="reuse center-block center" value="Pineapple" toppingsPrice="2">Pineapple</label></p>
-        <p><label for="toppings"><input type="checkbox" name="toppings" class="reuse center-block center" value="Poison" toppingsPrice="2">Poison</label></p>
+        <label for="toppings"><input type="checkbox" name="toppings" class="reuse center-block center" value="pepperoni" toppingsPrice="2">Pepperoni</label>
+        <label for="toppings"><input type="checkbox" name="toppings" class="reuse center-block center" value="pineapple" toppingsPrice="2">Pineapple</label>
+        <label for="toppings"><input type="checkbox" name="toppings" class="reuse center-block center" value="poison" toppingsPrice="2">Poison</label>
         <button type="submit" class="btn btn-primary center-block reuse" id="buttonSubmission">place order</button>
       </form>
       <em><span id="output"></span></em>
+    </div>
+      <div class="container pizzaPicture">
+        <img src="images/pizzabase-clear.png" class="base hidden">
+        <img src="images/poisonstars-clear.png" class="poison hidden">
+        <img src="images/pineapples-clear.png" class="pineapple hidden">
+        <img src="images/peppsclear.png" class="pepperoni hidden">
+      </div>
     </div>
   </body>
 </html>
