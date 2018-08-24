@@ -20,6 +20,16 @@ Pizza.prototype.charge = function () {
 };
 //user interface
 $(document).ready(function() {
+  $("input[type=radio][name=size]").click(function(){
+    $(".base").removeClass("hidden");
+  })
+  $("input[type=checkbox][name=toppings]").click(function(){
+    var pizzapic = $(this).val();
+     $('.'+pizzapic).toggleClass("hidden");
+  })
+  $("input[type=radio][name=size]").click(function(){
+    $(".base").removeClass("hidden");
+  })
   $("#pizzaGate").submit(function(event) {
     event.preventDefault();
     var orderSize = $("input[type=radio][name=size]:checked").val();

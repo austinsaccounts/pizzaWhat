@@ -1,15 +1,25 @@
 body {
   text-align: center;
-  background: rgb(255, 51, 204);
+  background: rgb(61, 11, 11);
+ color: rgba(134, 4, 62, 1);
 }
+label {
+  margin: 5pt;
+  width: 150px;
+  display: -webkit-inline-box;
+   color: rgba(237, 13, 13, .5);
+}
+
 .form-control {
-  background: rgb(255, 51, 204);
+  background: inherit;
+  margin-left: 10%;
 }
 .jumbotron {
   padding-top: 0px;
   padding-bottom: 0px;
   height: 150px;
-  background-color: rgb(51, 204, 55, .2);
+  background-color: rgba(134, 4, 62, 1);
+  color: rgba(237, 13, 13, 0.64);
 }
 .form {
   position: relative;
@@ -18,23 +28,50 @@ body {
   border: 0;
   box-shadow: none;
 }
-.revealed {
-  background-color: rgb(255, 51, 204);
-}
 #buttonSubmission {
-  background-color: pink;
-}
-::-webkit-scrollbar {
-  width: 1em;
-}
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-::-webkit-scrollbar-thumb {
-  background-color: pink;
-  outline: 1px solid red;
+  background-color: black;
+  color:tomato;
+  color: rgba(237, 13, 13, 1)
 }
 .btn {
   margin-top: 5pt;
   padding-top: 5pt;
+}
+h2 {
+  padding-top: 20px;
+   color: rgba(237, 13, 13, 1);
+}
+span {
+  color: rgba(237, 13, 13, 1);
+  font-size: 20pt;
+  text: 30pt;
+}
+img {
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: -5%;
+  margin-right: 5px;
+  padding: 5px;
+}
+.base {
+  z-index: 1;
+  margin: 5px;
+}
+.poison {
+  z-index: 3;
+}
+.pineapple {
+  z-index: 4;
+}
+.pepperoni {
+  z-index: 2
+}
+
+.pizzaPicture {
+  margin: 5px;
+  padding: 5px;
+}
+.main {
+  /* float: right; */
 }

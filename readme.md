@@ -14,7 +14,7 @@ Create a prototype method for the cost of a pizza depending on the selections ch
 
 this can be attained at github through
 the address listed below
-https://github.com/austinsaccounts/-------------------------------------
+https://github.com/austinsaccounts/pizzaWhat.git-------------------------------------
 
 
 ## Known Bugs
@@ -22,6 +22,7 @@ n/a
 
 ## Technologies Used
 checkboxes and radis are being used for multiple information grabs, ie (value and price)
+-also checkout the assembling pizza!-
 _{jquery, css html}_
 
 ### License
