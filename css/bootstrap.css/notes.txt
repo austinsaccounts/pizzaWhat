@@ -1,0 +1,102 @@
+property = noun, aka person, place thing
+method = verb, an action word, run skip poop etc...
+
+var varName ={}
+varname.someproperty  //this will give varname a property of someproperty
+varName.newProp = [1, 2 ,3 "string"] // this is adding array
+
+can use array methods ie
+varname.arrname.push("something") 
+
+making functions!!!
+
+varname.functName = function() {return this.age * 7}
+
+----------
+to use the function, we call it by
+
+functName
+========================================================================
+---------------------
+var dog1 = {		|  equivalent to 
+  name: "Falcor",	|
+  colors: ["black"],	|  var dog1("falcor",["black"], 4);
+  age: 4,		|
+};			|	this is literal notation
+----------------------
+
+============================= constructor ===================================
+
+function Dog(name, colors, age) {	|   creates a function for easy input
+  this.name = name;			|
+  this.colors = colors;			| this is how used
+  this.age = age;			| var pup = new dog("ernie", ["1","2","3"]
+}
+===============================================================================
+String.prototype.addExcitement= function(return this + "!!!!!!")
+> var newGreeting = "Hola";
+
+> newGreeting.addExcitement();
+
+"Hola!!!!!!!!!"
+
+
+----------------------------------------------------
+
+$(document).ready(function() {
+  $("form#myers-brigg_survey").submit(function(event) {
+    event.preventDefault();
+    $("#mb-responses").show();
+    console.log("#mb-responses")
+
+    var newArray = [];
+    $("input:checkbox[name=myers-brigg]:checked").each(function() {
+      var pass = $(this).val();
+      newArray.push(pass);
+    });
+
+    
+    var sum = 0;
+    var i = newArray.length;
+    while (i--) sum += parseInt(newArray[i])
+    if (sum >= 1) {
+      results = "you're an extrovert";
+    } else if (sum < 0) {
+      results = "You're an introvert";
+      alert(results);
+    }
+  });
+});
+----------------------------------------			<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="js/jquery-3.2.1.js"></script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' media='all'>
+    <link href="css/styles.css" rel='stylesheet' type='text/css' media='all'>
+    <script src="js/scripts.js"></script>
+    <title>Word Puzzle</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Personality Test</h2>
+      </div>
+      <form id="myers-brigg_survey">
+        <div class="form-group">
+          <p>What describes you</p>
+          <input type="checkbox" name="myers-brigg" value=1> sociable<br>
+          <input type="checkbox" name="myers-brigg" value=1>focused on outer world<br>
+          <input type="checkbox" name="myers-brigg" value=1>talkative<br>
+          <input type="checkbox" name="myers-brigg" value=1>Speak before thinking<br>
+          <input type="checkbox" name="myers-brigg" value=1>quick to action<br>
+          <input type="checkbox" name="myers-brigg" value=-1>quiet<br>
+          <input type="checkbox" name="myers-brigg" value=-1>Focused on inner world.<br>
+          <input type="checkbox" name="myers-brigg" value=-1>loner.<br>
+          <input type="checkbox" name="myers-brigg" value=-1>Active listeners.<br>
+          <input type="checkbox" name="myers-brigg" value=-1>Slow to action.<br>
+        </div>
+        <button type="submit">Submit Survey</button>
+      </form>
+      <span id="mb-responses">		

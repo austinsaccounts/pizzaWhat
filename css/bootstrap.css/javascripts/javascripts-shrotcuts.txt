@@ -1,0 +1,47 @@
+in project master file 
+	$ npm init
+	--save-dev
+		~~~download each package that our project needs using either the --save-dev
+
+Node Commands Overview
+Text
+Cheat sheet
+Here are some helpful shortcuts:
+
+Install commands
+
+npm install gulp --save-dev
+bower install jquery --save
+bower install bootstrap --save
+bower install moment --save
+npm install bower-files --save-dev
+npm install browser-sync --save-dev
+npm install browserify --save-dev
+npm install vinyl-source-stream --save-dev
+npm install gulp-concat --save-dev
+npm install gulp-uglify --save-dev
+npm install gulp-util --save-dev
+npm install del --save-dev
+npm install jshint --save-dev
+npm install gulp-jshint --save-dev
+
+*******************************************************************
+
+Gulpfile requirements
+var browserSync = require('browser-sync').create();
+var lib = require('bower-files')();
+var gulp = require('gulp');
+var source = require('vinyl-source-stream');
+var uglify = require('gulp-uglify');
+var utilities = require('gulp-util');
+var buildProduction = utilities.env.production;
+var del = require('del');
+var jshint = require('gulp-jshint');
+var concat = require('gulp-concat');  
+*******************************************************************
+when/if cloning 
+ npm install
+bower install
+then to get it running see below ---------
+ gulp build 
+ gulp serve

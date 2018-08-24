@@ -1,0 +1,59 @@
+body {
+  text-align: center;
+  background: rgb(255, 51, 204);
+}
+.form-control {
+  background: rgb(255, 51, 204);
+}
+.threatening {
+  color: red;
+  font-size: 18pt;
+  font-style: italic;
+}
+.jumbotron {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 150px;
+  background-color: rgb(51, 204, 55, .2);
+}
+.form {
+  position: relative;
+}
+.no-border {
+  border: 0;
+  box-shadow: none;
+}
+.revealed {
+  background-color: rgb(255, 51, 204);
+}
+.holdem {
+  margin-top: 15pt;
+  padding-top: 15pt;
+  max-width: 300pt;
+  max-height: 100pt;
+  height: 80pt;
+  overflow: auto;
+}
+
+#numberInput {
+  text-align: center;
+  max-width: 80pt;
+  background-color: pink;
+}
+#buttonSubmission {
+  background-color: pink;
+}
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: pink;
+  outline: 1px solid red;
+}
+.btn {
+  margin-top: 5pt;
+  padding-top: 5pt;
+}
