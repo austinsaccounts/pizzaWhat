@@ -5,8 +5,6 @@ function Pizza(orderSize,orderSizePrice,orderToppings,toppingsPrice){
   this.toppings=orderToppings;
   this.toppingsPrice=toppingsPrice;
 }
-
-
 //user interface
 $(document).ready(function() {
   $("#pizzaGate").submit(function(event) {

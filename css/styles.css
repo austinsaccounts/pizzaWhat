@@ -5,11 +5,6 @@ body {
 .form-control {
   background: rgb(255, 51, 204);
 }
-.threatening {
-  color: red;
-  font-size: 18pt;
-  font-style: italic;
-}
 .jumbotron {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -25,20 +20,6 @@ body {
 }
 .revealed {
   background-color: rgb(255, 51, 204);
-}
-.holdem {
-  margin-top: 15pt;
-  padding-top: 15pt;
-  max-width: 300pt;
-  max-height: 100pt;
-  height: 80pt;
-  overflow: auto;
-}
-
-#numberInput {
-  text-align: center;
-  max-width: 80pt;
-  background-color: pink;
 }
 #buttonSubmission {
   background-color: pink;

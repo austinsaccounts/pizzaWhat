@@ -21,7 +21,7 @@ https://github.com/austinsaccounts/-------------------------------------
 n/a
 
 ## Technologies Used
-also notice that we are gathering the pizza size and sizePrice from a radiobutton.
+checkboxes and radis are being used for multiple information grabs, ie (value and price)
 _{jquery, css html}_
 
 ### License
