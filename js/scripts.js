@@ -1,15 +1,23 @@
 //business logic
+function getSum(total, num) {
+    return total + num;
+}
 function Pizza(orderSize,orderSizePrice,orderToppings,toppingsPrice){
   this.size=orderSize;
   this.sizePrice=parseInt(orderSizePrice);
   this.toppings=orderToppings;
   this.toppingsPrice=toppingsPrice;
-}
+};
 Pizza.prototype.assembler = function () {
-  var assembledPizza = "a " +this.size+ " " +this.toppings.join(" ")+ " pizza";
+  var assembledPizza = "a " +this.size+ " " +this.toppings.join(", ")+ " pizza";
   return assembledPizza;
 };
-
+Pizza.prototype.charge = function () {
+  var totalCharges = this.toppingsPrice.reduce(getSum);
+  totalCharges += this.sizePrice;
+  console.log(totalCharges);
+  return totalCharges;
+};
 //user interface
 $(document).ready(function() {
   $("#pizzaGate").submit(function(event) {
@@ -28,6 +36,10 @@ $(document).ready(function() {
     orderToppings.unshift(orderCheese);
     toppingsPrice.unshift(parseInt(orderCheesePrice));
     var myPizza = new Pizza(orderSize,orderSizePrice,orderToppings,toppingsPrice);
-    $('#output').append('<p>'+myPizza.assembler()+'</p>');
+    var custPizza = myPizza.assembler();
+    var custPrice = myPizza.charge();
+    $('#pizzaGate').toggle();
+    $('#output').append('<p>'+custPizza+'</p>');
+    $('#output').append('<p> your total cost is $'+custPrice+' and dont forget to tip your driver</p>');
   })
-})
+});
