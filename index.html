@@ -21,13 +21,16 @@
     <!-- top section -->
     <div class="main container">
       <form class="form-control no-border" id="pizzaGate">
-        <p><label for="size"><input type="radio" name="size" class="reuse center-block center" value="small" sizePrice="10"> Small $10</label></p>
+        <p><label for="size"><input type="radio" name="size" class="reuse center-block center" value="small" sizePrice="10" required="true"> Small $10</label></p>
         <p><label for="size"><input type="radio" name="size" class="reuse center-block center" value="medium" sizePrice="15">Medium $15</label></p>
         <p><label for="size"><input type="radio" name="size" class="reuse center-block center" value="large" sizePrice="20">large $20</label></p>
-        <button type="submit" class="btn btn-primary center-block reuse" id="buttonSubmission">Place Order</button>
-        <div class="holdem center-block">
-          <p id="output"><p>
-        </div>
+        <h2> What Toppings Would you like?</h2>
+        <p><label for="cheese"><input type="radio" name="cheese" class="reuse center-block center" value="cheese" toppingsPrice="0">Cheese</label></p>
+        <p><label for="cheese"><input type="radio" name="cheese" class="reuse center-block center" value="lite-cheese" toppingsPrice="0">Lite-Cheese</label></p>
+        <p><label for="cheese"><input type="radio" name="cheese" class="reuse center-block center" value="Extra-cheese" toppingsPrice="2" required="true">Extra-Cheese $2 Extra</label></p>
+
+
+        <button type="submit" class="btn btn-primary center-block reuse" id="buttonSubmission">place order</button>
       </form>
     </div>
 </body>

@@ -21,7 +21,7 @@ https://github.com/austinsaccounts/-------------------------------------
 n/a
 
 ## Technologies Used
-
+also notice that we are gathering the pizza size and sizePrice from a radiobutton.
 _{jquery, css html}_
 
 ### License
