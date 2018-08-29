@@ -4,10 +4,10 @@ function getSum(total, num) {
     return total + num;
 }
 function Pizza(orderSize,orderSizePrice,orderToppings,toppingsPrice){
-  this.size=orderSize;
-  this.sizePrice=parseInt(orderSizePrice);
-  this.toppings=orderToppings;
-  this.toppingsPrice=toppingsPrice;
+  this.size = orderSize ;
+  this.sizePrice = parseInt(orderSizePrice);
+  this.toppings = orderToppings;
+  this.toppingsPrice = toppingsPrice;
 }
 Pizza.prototype.Assembler = function () {
   var assembledPizza = this.size + " " + this.toppings.join(", ");
@@ -34,7 +34,7 @@ $(document).ready(function() {
   $("#pizzaGate").submit(function(event) {
     event.preventDefault();
     var orderSize = $("input[type=radio][name=size]:checked").val();
-    var orderSizePrice =$("input[type=radio][name=size]:checked").attr('sizePrice');
+    var orderSizePrice = $("input[type=radio][name=size]:checked").attr('sizePrice');
     var orderToppings = [];
     var orderCheese = $("input[type=radio][name=cheese]:checked").val()
     var orderCheesePrice =  $("input[type=radio][name=cheese]:checked").attr('toppingsPrice');
