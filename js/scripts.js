@@ -9,11 +9,11 @@ function Pizza(orderSize,orderSizePrice,orderToppings,toppingsPrice){
   this.toppings=orderToppings;
   this.toppingsPrice=toppingsPrice;
 }
-Pizza.prototype.assembler = function () {
-  var assembledPizza = "a " + this.size + " " + this.toppings.join(", ") + " pizza";
+Pizza.prototype.Assembler = function () {
+  var assembledPizza = this.size + " " + this.toppings.join(", ");
   return assembledPizza;
 }
-Pizza.prototype.charge = function () {
+Pizza.prototype.Charge = function () {
   var totalCharges = this.toppingsPrice.reduce(getSum);
   totalCharges += this.sizePrice;
   console.log(totalCharges);
@@ -47,9 +47,9 @@ $(document).ready(function() {
     orderToppings.unshift(orderCheese);
     toppingsPrice.unshift(parseInt(orderCheesePrice));
     var myPizza = new Pizza(orderSize,orderSizePrice,orderToppings,toppingsPrice);
-    var custPizza = myPizza.assembler();
-    var custPrice = myPizza.charge();
+    var custPizza = myPizza.Assembler();
+    var custPrice = myPizza.Charge();
     $('#pizzaGate').toggle();
-    $('#output').append('<p> You ordered  ' + custPizza + '</p> <p> Your total cost is $' + custPrice + " and don't forget to tip your driver</p>");
+    $('#output').append('<p> You ordered a ' + custPizza + ' pizza. </p> <p> Your total cost is $' + custPrice + " and don't forget to tip your driver</p>");
   });
 });
