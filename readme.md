@@ -6,26 +6,36 @@
 
 ## Description
 
-this project will use prototypes and constructors to
-Allow the user to choose toppings and size for the pizza they'd like to order.
-Create a pizza object constructor with properties for toppings and size.
-Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
+This project will use a constructor (Pizza)
+to Create a pizza object with properties for toppings and size.
+it will use prototype methods for the cost of a pizza depending on the selections chosen (Charge) and it will use a prototype (Assembler) to string the ordered pizza.
+
 ## Setup/Installation Requirements
 
-this can be attained at github through
-the address listed below
-https://github.com/austinsaccounts/pizzaWhat.git-------------------------------------
+* _Atom or some text editor will be required for ideal viewing of code/programming used_
+* _the git repository can be cloned from https://github.com/austinsaccounts/pizzaWhat.git
 
+
+## Specs
+user can select a size and the base price will be assigned.
+ * input user selects size Medium *
+ * output 'medium pizza 15$'*
+user can choose cheese and be charged additional 2$ for extra cheese;
+  * input user selects extra cheese large pizzas
+  * output  'large extra cheese pizza 22$'
+user can choose toppings and be charged additional 2$ per topping;
+  * input user selects extra cheese large pizza with poison
+  * output  'large extra cheese poison pizza 24$'
 
 ## Known Bugs
-n/a
+Not Known
 
 ## Technologies Used
-checkboxes and radis are being used for multiple information grabs, ie (value and price)
+checkboxes and radios are being used for multiple information grabs, ie (value and price)
 -also checkout the assembling pizza!-
 _{jquery, css html}_
 
 ### License
  mit@
 
-Copyright (c) 2016 **_{austin}
+Copyright (c) 2018 **_{Austin}

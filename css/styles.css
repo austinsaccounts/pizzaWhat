@@ -9,7 +9,6 @@ label {
   display: -webkit-inline-box;
    color: rgba(237, 13, 13, .5);
 }
-
 .form-control {
   background: inherit;
   margin-left: 10%;
@@ -49,7 +48,7 @@ span {
 img {
   width: 30%;
   position: absolute;
-  top: 40%;
+  top: 60%;
   left: -5%;
   margin-right: 5px;
   padding: 5px;
@@ -65,13 +64,9 @@ img {
   z-index: 4;
 }
 .pepperoni {
-  z-index: 2
+  z-index: 2;
 }
-
 .pizzaPicture {
   margin: 5px;
   padding: 5px;
-}
-.main {
-  /* float: right; */
 }
