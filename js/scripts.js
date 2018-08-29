@@ -1,4 +1,4 @@
-// * * * * * * * * * started editing//
+
 //business logic
 function getSum(total, num) {
     return total + num;
