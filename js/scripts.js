@@ -3,7 +3,7 @@
 function getSum(total, num) {
     return total + num;
 }
-function Pizza(orderSize,orderSizePrice,orderToppings,toppingsPrice){
+function Pizza(orderSize, orderSizePrice, orderToppings, toppingsPrice){
   this.size = orderSize ;
   this.sizePrice = parseInt(orderSizePrice);
   this.toppings = orderToppings;
@@ -26,7 +26,7 @@ $(document).ready(function() {
   });
   $("input[type=checkbox][name=toppings]").click(function(){
     var pizzapic = $(this).val();
-     $('.'+pizzapic).toggleClass("hidden");
+     $('.' + pizzapic).toggleClass("hidden");
   });
   $("input[type=radio][name=size]").click(function(){
     $(".base").removeClass("hidden");
@@ -46,7 +46,7 @@ $(document).ready(function() {
       }).get();
     orderToppings.unshift(orderCheese);
     toppingsPrice.unshift(parseInt(orderCheesePrice));
-    var myPizza = new Pizza(orderSize,orderSizePrice,orderToppings,toppingsPrice);
+    var myPizza = new Pizza(orderSize, orderSizePrice, orderToppings, toppingsPrice);
     var custPizza = myPizza.Assembler();
     var custPrice = myPizza.Charge();
     $('#pizzaGate').toggle();
